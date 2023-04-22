@@ -1,0 +1,31 @@
+module NUK.Items {
+    imports {
+        Base
+    }
+    
+    item NukaCola
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		DisplayName = Nuka Cola,
+		Icon = NukaCola,
+		EvolvedRecipe = Beverage:4;Beverage2:4,
+		FoodType = SoftDrink,
+		CantBeFrozen = TRUE,
+		EatType = bottle,
+		Packaged = TRUE,
+		ReplaceOnUse = NukaColaEmpty,
+		HungerChange = -12,
+		ThirstChange = -85,
+		UnhappyChange = -10,
+		Calories = 400,
+		Carbohydrates = 104,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		StaticModel = RedWineBottle,
+		WorldStaticModel = WineRedGround,
+	}
+}
